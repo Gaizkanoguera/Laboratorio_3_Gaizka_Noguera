@@ -1,12 +1,32 @@
-numero_dia = int(input("Escribe un número del 1 al 7: "))
+try:
+    numero_dia = int(input("Introduce un número del 1 al 7: "))
 
-match numero_dia:
-    case 1:
-        print("El día seleccionado es: Lunes")
+    match numero_dia:
+        case 1:
+            print("El día seleccionado es: Lunes")
 
-    # Completa los casos del 2 al 7.
+        case 2:
+            print("El día seleccionado es: Martes")
 
-    case _:
-        print("Error: el número debe estar entre 1 y 7.")
+        case 3:
+            print("El día seleccionado es: Miércoles")
 
-        print("")
+        case 4:
+            print("El día seleccionado es: Jueves")
+
+        case 5:
+            print("El día seleccionado es: Viernes")
+
+        case 6:
+            print("El día seleccionado es: Sábado")
+
+        case 7:
+            print("El día seleccionado es: Domingo")
+
+        case _:
+            print("Error: el número debe estar entre 1 y 7.")
+
+    print("")
+
+except ValueError:
+    print("Error: debes introducir un número entero.")
